@@ -3,10 +3,12 @@
 import matplotlib.pyplot as plt
 def main():
     """Plot graph from people in Thailand who are unemployed"""
-    x = range(2550, 2560)
-    y = [0.9961, 1.0056, 1.0836, 0.7522, 0.4894, 0.4752, 0.5152, 0.5883, 0.6165, 0.6787]
+    x = range(10)
+    y = [1.376, 1.384, 1.489, 1.04, 0.679, 0.657, 0.71, 0.836, 0.88, 0.98]
+    xtick = ("2550", "2551", "2552", "2553", "2554", "2555", "2556", "2557", "2558", "2559")
+    plt.xticks(x, xtick)
     plt.plot(x, y, color="blue", marker="o", label=("Percentage of people who are unemployed"))
-    plt.title("People in Thailand who are unemployed in percentage")
+    plt.title("People in Thailand \nwho are unemployed in percentage", fontsize="15", color="orange")
     plt.xlabel("Years")
     plt.ylabel("Percent of people")
     plt.legend()
