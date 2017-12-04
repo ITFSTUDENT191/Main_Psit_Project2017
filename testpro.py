@@ -3,9 +3,9 @@ import pandas as pd
 import pygal
 def main():
     """ReadData & Plotgraph"""
-    chart = pygal.Bar(title='กราฟแสดงตัวเลขผู้ว่างงานและผู้มีงานทำของคนไทยทั่วประเทศ ระหว่างปี 2550-2559') #Name of graph
+    chart = pygal.Bar(title='A graph of employed and unemployed from 2550 to 2559') #Name of graph
     datalist = [] #List for keep data
-    address = 'C:/Users/HP/Documents/GitHub/Main_Psit_Project2017/Data/Unemployed50-59.csv' #Address file
+    address = 'E:/python project/github webdev/Main_Psit_Project2017/Data/Unemployed50-59.csv' #Address file
     data = pd.read_csv(address) #Readfile
     datalist.append(data) #append data to list
     lisstr = [str(i) for i in datalist] #Change type of data to str & keep it to [lisstr]
