@@ -9,7 +9,7 @@ def main():
     data = pd.read_csv(address) #Readfile
     datalist.append(data) #append data to list
     lisstr = [str(i) for i in datalist] #Change type of data to str & keep it to [lisstr]
-    datalist = lisstr[0].split() #Split data and keep it to [lis]
+    datalist = lisstr[0].split() #Split data and keep it to [datalist]
     datalist = datalist[2:] #Remove Word
     years = [] #List for keep years
     for i in datalist:
