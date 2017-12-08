@@ -3,17 +3,17 @@ import pandas as pd
 import pygal
 def main():
     """ReadData & Plotgraph"""
-    chart = pygal.Bar(title='Graph of Unemployment (Number), Whole Kingdom: 2550 - 2559') #Name of graph
+    chart = pygal.Bar(title='Graph of Unemployment (Percentage), Rate by Sex, Bangkok: 2550 - 2559 ') #Name of graph
     datalist = [] #List for keep data
-    address = 'C:/Users/HP/Documents/GitHub/Main_Psit_Project2017/Data/Unemployed50-59_Number_.csv' #Address file
+    address = 'C:/Users/HP/Documents/GitHub/Main_Psit_Project2017/Data/Unemployed50-59_sex_Percentage_.csv' #Address file
     data = pd.read_csv(address) #Readfile
     datalist.append(data) #append data to list
     lisstr = [str(i) for i in datalist] #Change type of data to str & keep it to [lisstr]
     datalist = lisstr[0].split() #Split data and keep it to [datalist]
-    datalist = datalist[2:] #Remove Word
+    datalist = datalist[3:] #Remove Word
     years = [] #List for keep years
     for i in datalist:
-        if i in '0123456789': #Check Number 0-9
+        if i in '1011121314151617181920': #Check Number 0-20
             datalist.remove(i) #Remove Number
     for i in datalist:
         if i[:3] == '255':

@@ -3,7 +3,7 @@ import pandas as pd
 import pygal
 def main():
     """ReadData & Plotgraph"""
-    chart = pygal.Bar(title='A graph of employed and unemployed from 2550 to 2559 (Percentage)') #Name of graph
+    chart = pygal.Bar(title='Graph of Unemployment (Percentage), Whole Kingdom: 2550 - 2559') #Name of graph
     datalist = [] #List for keep data
     address = 'C:/Users/HP/Documents/GitHub/Main_Psit_Project2017/Data/Unemployed50-59_Percentage_.csv' #Address file
     data = pd.read_csv(address) #Readfile
