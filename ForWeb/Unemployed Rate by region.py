@@ -5,7 +5,7 @@ def main():
     """ReadData & Plotgraph"""
     chart = pygal.Bar(title=' Graph of Unemployment (Percentage), Rate by region, Whole Kingdom: 2550 - 2559 ')
     datalist = []
-    address = 'C:/Users/HP/Desktop/Unemployed Rate by region.csv'
+    address = 'C:/Users/HP/Documents/GitHub/Main_Psit_Project2017/Data/Unemployed Rate by region.csv'
     data = pd.read_csv(address)
     datalist.append(data)
     lisstr = [str(i) for i in datalist]
